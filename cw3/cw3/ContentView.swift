@@ -25,8 +25,6 @@ struct ContentView: View {
                     .font(.body)
                     .fontWeight(.light)
                     .foregroundColor(Color.orange)
-                
-                
                 Image("jake")
                     .resizable()
                     .frame(width: 130, height: 130, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -38,8 +36,9 @@ struct ContentView: View {
                 Image("jerry")
                     .resizable()
                     .frame(width: 130, height: 130, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .aspectRatio(contentMode: .fit)
                 Text("✨Jerry✨")
+                    .font(.body)
+                    .fontWeight(.light)
                     .foregroundColor(Color.green)
                 Image("Patrick-Star")
                     .resizable()
@@ -50,16 +49,15 @@ struct ContentView: View {
                     .fontWeight(.light)
                     .foregroundColor(Color.red)
                     .padding(.bottom)
-                
+                }
             }
         }
     }
     
-    struct ContentView_Previews: PreviewProvider {
+    struct ContentView_Previews:  PreviewProvider {
         static var previews: some View {
             ContentView()
         }
         
-    }
 }
 
